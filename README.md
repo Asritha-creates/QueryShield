@@ -27,6 +27,7 @@ Modern databases are powerful but inaccessible to non-technical stakeholders. To
 2. **AI Translation:** An LLM (Groq/Gemini) generates a structured JSON query plan.
 3. **Strict Validation:** The server verifies the plan against a whitelist of allowed MongoDB operators.
 4. **Safe Execution:** The query runs, and results are returned in a clean, tabular UI.
+5. **Dynamic export:** Downloadable csv files with user english queries and llm generated mongodb queries
 
 ---
 
@@ -40,13 +41,33 @@ Modern databases are powerful but inaccessible to non-technical stakeholders. To
 
 ---
 
+## 🌐 Live Deployment
+
+| Service | Platform | URL |
+| :--- | :--- | :--- |
+| **Frontend UI** | Vercel | [https://your-frontend-link.vercel.app](https://querysheild-frontend.vercel.app/) |
+| **Backend API** | Render | [https://your-backend-link.onrender.com](https://queryshield-backend.onrender.com/) |
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Prerequisites
 - Node.js (v18+)
 - MongoDB Atlas account
 - Groq or Google Gemini API Key
-
+### 🔐 Environment Variables
+**Backend (`backend/.env`)**
+```env
+GEMINI_API_KEY=your_gemini_api_key
+SESSION_SECRET=a_very_long_random_string
+PORT=5000
+FRONTEND_URL=http://localhost:3000
+```
+**Frontend (`frontend/.env`)**
+```env
+VITE_API_URL=your_backend_url
+```
 ### 2. Installation
 ```bash
 # Clone the repository
@@ -63,4 +84,5 @@ node server.js
 cd frontend
 npm install
 npm run dev
+
 

@@ -1,0 +1,5 @@
+{
+  "name": "Natural Language Interface for MongoDB",
+  "description": "Connect your MongoDB database and query it using plain English. Secure, read-only access with AI-powered query generation.",
+  "requestFramePermissions": []
+}

@@ -87,7 +87,7 @@ VITE_API_URL=your_backend_url
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone [https://github.com/your-username/queryshield.git](https://github.com/your-username/queryshield.git)
+git clone [hhttps://github.com/Asritha-creates/QueryShield](https://github.com/Asritha-creates/QueryShield)
 cd queryshield
 
 # Setup Backend

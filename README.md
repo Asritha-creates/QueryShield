@@ -41,6 +41,22 @@ Modern databases are powerful but inaccessible to non-technical stakeholders. To
 
 ---
 
+## ScreenShots
+### 🏠 Landing Page
+![Landing Page](screenshots/landing_page.png)
+
+### 🔗 Database Connection Page
+![Connection Page](screenshots/connecting%20page.png)
+
+### 📊 Dashboard Interface
+![Dashboard](screenshots/dashboard.png)
+
+### 🤖 AI Insights
+![AI Insights](screenshots/aiinsights.png)
+
+### AI Query in Action
+![AI Query Generation](screenshots/query_1.png)
+
 ## 🌐 Live Deployment
 
 | Service | Platform | URL |

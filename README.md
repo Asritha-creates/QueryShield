@@ -57,6 +57,18 @@ Modern databases are powerful but inaccessible to non-technical stakeholders. To
 ### AI Query in Action
 ![AI Query Generation](screenshots/query_1.png)
 
+## 📥 Sample CSV Export
+
+Download a sample generated CSV file here:
+
+👉 **[Sample report](https://docs.google.com/spreadsheets/d/1CdQXyKVouG-kKGUqduzg4uYbwlwfMNeZXo4EUhBqxnk/edit?usp=sharing)**
+
+The exported CSV includes:
+
+- Original English query  
+- Generated MongoDB query  
+- Returned dataset  
+
 ## 🌐 Live Deployment
 
 | Service | Platform | URL |
@@ -100,6 +112,7 @@ node server.js
 cd frontend
 npm install
 npm run dev
+
 
 
 

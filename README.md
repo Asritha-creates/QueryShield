@@ -87,7 +87,7 @@ VITE_API_URL=your_backend_url
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone [hhttps://github.com/Asritha-creates/QueryShield](https://github.com/Asritha-creates/QueryShield)
+git clone [https://github.com/Asritha-creates/QueryShield](https://github.com/Asritha-creates/QueryShield.git)
 cd queryshield
 
 # Setup Backend
@@ -100,5 +100,6 @@ node server.js
 cd frontend
 npm install
 npm run dev
+
 
 

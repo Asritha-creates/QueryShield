@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../services/api";
 import { Loader2, Sparkles } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 
 export const InsightsPage: React.FC = () => {
 
@@ -13,8 +14,13 @@ export const InsightsPage: React.FC = () => {
       try {
         const res = await api.post("/ai-insights");
         setInsights(res.data.insights);
-      } catch (err) {
-        setInsights("Failed to analyze database.");
+      } catch (err: any) {
+        console.log("Error fetching insights:", err);
+        setInsights(
+          err.response?.data?.error ||
+          err.message ||
+          "Failed to analyze database."
+        );
       } finally {
         setLoading(false);
       }
@@ -26,7 +32,7 @@ export const InsightsPage: React.FC = () => {
 
   return (
     <div className="h-screen bg-slate-50 p-10">
-      
+
       <div className="max-w-4xl mx-auto">
 
         <div className="flex items-center gap-3 mb-6">
@@ -42,8 +48,12 @@ export const InsightsPage: React.FC = () => {
             Analyzing database structure...
           </div>
         ) : (
-          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-lg whitespace-pre-wrap leading-relaxed text-slate-700">
-            {insights}
+          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-lg leading-relaxed text-slate-700 prose max-w-none">
+            
+            <ReactMarkdown>
+              {insights}
+            </ReactMarkdown>
+
           </div>
         )}
 
